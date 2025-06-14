@@ -1,4 +1,4 @@
-// Copyright Druid Mechanics
+// Aura RPG
 
 using UnrealBuildTool;
 

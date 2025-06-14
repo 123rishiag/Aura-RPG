@@ -1,4 +1,4 @@
-// Copyright Druid Mechanics
+// Aura RPG
 
 
 #include "Player/AuraPlayerController.h"
@@ -24,7 +24,10 @@ AAuraPlayerController::AAuraPlayerController()
 	 FHitResult CursorHit;
 	 GetHitResultUnderCursor(ECC_Visibility, false, CursorHit);
 
-	 if (!CursorHit.bBlockingHit) return;
+	 if (!CursorHit.bBlockingHit)
+	 {
+		 return;
+	 }
 
 	 LastActor = ThisActor;
 	 ThisActor = CursorHit.GetActor();
