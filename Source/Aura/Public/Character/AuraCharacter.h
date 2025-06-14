@@ -1,10 +1,13 @@
-// Copyright Druid Mechanics
+// Aura RPG
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "Character/AuraCharacterBase.h"
 #include "AuraCharacter.generated.h"
+
+class USpringArmComponent;
+class UCameraComponent;
 
 /**
  * 
@@ -19,6 +22,14 @@ public:
 
 	virtual void PossessedBy(AController* NewController) override;
 	virtual void OnRep_PlayerState() override;
+
+protected:
+
+	UPROPERTY(VisibleAnywhere)
+	USpringArmComponent* SpringArm;
+
+	UPROPERTY(VisibleAnywhere)
+	UCameraComponent* Camera;
 
 private:
 	void InitAbilityActorInfo();

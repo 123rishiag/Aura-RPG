@@ -1,4 +1,4 @@
-// Copyright Druid Mechanics
+// Aura RPG
 
 
 #include "UI/Widget/AuraUserWidget.h"
